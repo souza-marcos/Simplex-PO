@@ -1,0 +1,37 @@
+[ ] Subrotinas
+    [ ] Leitura inicial dos dados
+    [ ] Canonizar a PL
+    [ ] Troca de Coluna na Base
+    [ ] Mostrar Passo a passo
+    [ ] Regra de Bland
+
+
+[ ] Cuidados
+    [ ] Transformar valores proximos suficientemente de zero em zero
+
+[ ] Simplex Normal (Input: max c^t x  s.a. A x <= b; base viável de colunas B)
+    [ ] transformar PL em forma canônica a respeito da base B
+    [ ] achar c_k > 0, para procurar outra base que maximize a resposta
+    [ ] encontrar restrição mais apertada para aumentar até seu limite quanto à variável. 
+        Isto é, achar a indice da coluna que ocorre mínimo => t = min { b_j / A_jk : A_jk > 0}.
+    [ ] trocar a coluna para a nova base B.
+
+    ---- Condições de Parada ----
+    [ ] Caso c_N <= 0. x básica é ótima.
+    [ ] Caso A_k <  0. PL eh ilimitada.
+
+    ---- Importante ----
+    [ ] Caso finalize com multiplas soluções ótimas deve-se rodar 
+        uma iteração a mais do simplex e mostrar no console pelo menos 
+        duas delas. 
+
+
+[ ] Simplex Duas Fases (Achar a base viável inicial)
+    [ ] Execução do algoritmo inicial com uma matriz estendida 
+    [ ] Sempre optar por utilizar variáveis originais
+    [ ] Caso utilize na resposta final => inviabilidade.
+
+[ ] Extras 
+    [ ] Simplex Dual
+    [ ] Análise de Sensibilidade
+    [ ] Certificados
