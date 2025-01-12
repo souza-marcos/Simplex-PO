@@ -1,24 +1,26 @@
 [ ] Subrotinas
-    [ ] Leitura inicial dos dados
-    [ ] Canonizar a PL
-    [ ] Troca de Coluna na Base
-    [ ] Mostrar Passo a passo
-    [ ] Regra de Bland
+    [X] Leitura inicial dos dados
+    [X] Canonizar a PL
+    [X] Troca de Coluna na Base
+    [X] Mostrar Passo a passo
+    [X] Regra de Bland
 
 
 [ ] Cuidados
     [ ] Transformar valores proximos suficientemente de zero em zero
+    [X] Transformar b >= 0
+
 
 [ ] Simplex Normal (Input: max c^t x  s.a. A x <= b; base viável de colunas B)
-    [ ] transformar PL em forma canônica a respeito da base B
-    [ ] achar c_k > 0, para procurar outra base que maximize a resposta
-    [ ] encontrar restrição mais apertada para aumentar até seu limite quanto à variável. 
+    [X] transformar PL em forma canônica a respeito da base B
+    [X] achar c_k > 0, para procurar outra base que maximize a resposta
+    [X] encontrar restrição mais apertada para aumentar até seu limite quanto à variável. 
         Isto é, achar a indice da coluna que ocorre mínimo => t = min { b_j / A_jk : A_jk > 0}.
-    [ ] trocar a coluna para a nova base B.
+    [X] trocar a coluna para a nova base B.
 
     ---- Condições de Parada ----
-    [ ] Caso c_N <= 0. x básica é ótima.
-    [ ] Caso A_k <  0. PL eh ilimitada.
+    [X] Caso c_N <= 0. x básica é ótima.
+    [X] Caso A_k <  0. PL eh ilimitada.
 
     ---- Importante ----
     [ ] Caso finalize com multiplas soluções ótimas deve-se rodar 
@@ -27,11 +29,21 @@
 
 
 [ ] Simplex Duas Fases (Achar a base viável inicial)
-    [ ] Execução do algoritmo inicial com uma matriz estendida 
-    [ ] Sempre optar por utilizar variáveis originais
-    [ ] Caso utilize na resposta final => inviabilidade.
+    [X] Execução do algoritmo inicial com uma matriz estendida 
+    [X] Sempre optar por utilizar variáveis originais
+    [X] Caso utilize na resposta final => inviabilidade.
 
+-> Não vai dar tempo :( 
 [ ] Extras 
     [ ] Simplex Dual
     [ ] Análise de Sensibilidade
     [ ] Certificados
+
+
+-> Erros
+    -> Erro generico
+    [ ] Teste 04
+
+    -> Diferente do esperado
+    [ ] Teste 16
+    [ ] Teste 17
